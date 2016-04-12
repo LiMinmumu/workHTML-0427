@@ -18,6 +18,6 @@ router.get("/minmin",function(req,res,next){
     res.sendFile("abc.txt",{"root":"../views"});
 });
 router.get("/min_login",function (req,res,next) {
-    res.sendFile("min_login");
+    res.render("min_login");
 })
 module.exports = router;

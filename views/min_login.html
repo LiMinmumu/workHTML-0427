@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,initial-scale=1"/>
+    <link rel="stylesheet" href="/css/amazeui.min.css">
+    <link rel="stylesheet" href="/css/app.css">
+    <!--[if lt IE 9]>
+    <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+    <script src="/js/amazeui.ie8polyfill.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/amazeui.min.js"></script>
+    <title>Title</title>
+</head>
+<body class="fish-app-container">
+<!--头部导航-->
+<header data-am-widget="header" class="am-header am-header-fishnav">
+    <div class="am-header-left am-header-nav">
+        <a href="#left-link" class="">
+            <i class="am-header-icon am-icon-chevron-left"></i>
+        </a>
+    </div>
+
+    <h1 class="am-header-title">
+        <a href="#title-link" class="">
+            联络员出口
+        </a>
+    </h1>
+</header>
+<!--导航页-->
+<img src="/images/banner.png" data-rel="" alt="" class="am-img-responsive"/>
+<!--登录表单-->
+<div class="am-g">
+    <div class="am-u-10 am-u-lg-centered">
+        <img src="/images/contacter.png" data-rel="" alt="" class="am-img-responsive am-padding-vertical"/>
+    </div>
+</div>
+<div class="am-g">
+    <div class="am-u-10 am-u-offset-1 am-text-center">
+        <p class="am-text-xs">请先验证手机号</p>
+    </div>
+</div>
+<div class="am-g">
+    <div class="am-u-10 am-u-offset-1">
+        <form class="am-form fish-login-form am-margin-top">
+            <div class="am-form-group am-form-icon">
+                <i class="am-icon-mobile-phone am-icon-fw"></i>
+                <input type="text" class="am-form-field am-round am-input-lg" id="doc-ipt-email-1" placeholder="请输入手机号">
+            </div>
+            <div class="am-form-group am-form-icon">
+                <i class="am-icon-code am-icon-fw"></i>
+                <input type="text" class="am-form-field am-round am-input-lg" id="doc-ipt-pwd-1" placeholder="请输入验证码">
+                <a class="fish-get-code" href="javascript:;" data-am-modal="{target: '#my-alert'}">获取验证码</a>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="am-g">
+    <div class="am-u-10 am-u-offset-1 am-margin-vertical">
+        <button type="button" class="am-btn am-btn-fish-confirm am-btn-lg am-round am-u-12 am-margin-bottom-lg">确定
+        </button>
+    </div>
+</div>
+<!--弹出窗口-->
+<div class="am-modal am-modal-alert" tabindex="-1" id="my-alert">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd">
+            Amaze UI
+        </div>
+        <div class="am-modal-bd">
+            Hello world！
+        </div>
+        <div class="am-modal-footer">
+            <span class="am-modal-btn">确定</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

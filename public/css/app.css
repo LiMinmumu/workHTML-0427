@@ -1,1 +1,34 @@
-/* Write your styles */
+/*APP页面样式*/
+.fish-app-container{
+    background: #F5F5F5;
+}
+.am-header-fishnav{
+background:#353439;
+
+}
+.am-header-fishnav a{
+    color: #FFFFFF!important;
+}
+.fish-login-form i{
+    font-size:1.2em;
+    color: #999999;
+}
+.fish-login-form .am-form-icon .am-form-field{
+    padding-left:2.0em!important;
+}
+.am-btn-fish-confirm{
+    background: #00c4cc;
+    color: #FFFFFF;
+}
+.fish-get-code{
+    position: absolute;
+    right: .5em;
+    top: 50%;
+    display: block;
+    margin-top: -.5em;
+    line-height: 1;
+    z-index: 2;
+    font-size: 0.7em;
+    border-left: 1px solid #999999;
+    padding:0 10px;
+}

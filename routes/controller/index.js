@@ -17,7 +17,24 @@ router.post("/list",function(req,res,next){
 router.get("/minmin",function(req,res,next){
     res.sendFile("abc.txt",{"root":"../views"});
 });
+
 router.get("/min_login",function (req,res,next) {
     res.render("min_login");
 })
+
+router.get("/login",function(req,res,next){
+    res.render("login");
+});
+router.get("/applynew",function(req,res,next){
+    res.render("applynew");
+});
+router.get("/statusSuccess",function(req,res,next){
+    res.render("statusSuccess");
+});
+router.get("/checkPass",function(req,res,next){
+    res.render("checkPass");
+});
+router.get("/statusWaiting",function(req,res,next){
+    res.render("statusWaiting");
+});
 module.exports = router;

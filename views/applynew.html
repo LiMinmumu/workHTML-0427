@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport"
-          content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,initial-scale=1"/>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,initial-scale=1"/>
     <link rel="stylesheet" href="/css/bootstrap.min.css"/>
-    <!--<link rel="stylesheet" href="/css/font-awesome.min.css"/>-->
-    <link rel="stylesheet" href="/css/contacter.css"/>
+    <link rel="stylesheet" href="/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/css/contacter-applynew.css"/>
     <script type="text/javascript" src="/js/jquery.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
     <title>申请联络员</title>
@@ -27,69 +26,93 @@
     </h1>
 </header>
 <!--申请信息-->
-<div class="row fish-margin-top applynew-row">
-    <div class="col-xs-4">
-        <p>申请人信息 :</p>
-    </div>
-    <div class="col-xs-8 applynewname">
-        <p>王小军</p>
 
-        <p>3636363636666564160</p>
+<div class="container-fluid">
+    <div class="row fish-margin-top fish-contacter-row fish-contacter-row-info">
+        <div class="col-xs-6 text-left fish-contacter-user-info-label">
+            <span>申请人信息 :</span>
+        </div>
+        <div class="col-xs-14 text-left fish-contacter-user-info-content">
+            <p>王小军</p>
+            <p>3636363636666564160</p>
+        </div>
     </div>
-</div>
-<p class="applyInfo">请认真填写以下联络员申请信息:</p>
+    <div class="row fish-margin-top">
+        <div class=" fish-contacter-applyinfo">
+            <span class="applyInfo">请认真填写以下联络员申请信息:</span>
+        </div>
+    </div>
+    <div class="row fish-margin-top fish-contacter-row">
+        <div class="col-xs-6 text-left">
+            <span>服务区域<i>*</i></span>
+        </div>
+        <div class="col-xs-14 text-right fish-contacter-rightarrow">
+            <a href="javascript:;">
+                <span>每个联络员可申请服务本市/县</span>
+                <i class="glyphicon glyphicon-menu-right" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <div class="row fish-contacter-row">
+        <div class="col-xs-6 text-left">
+            <span>详细地址<i>*</i></span>
+        </div>
+        <div class="col-xs-14">
+            <input class="fish-apply-input col-xs-20" placeholder="请输入你的详细居住地址" />
+        </div>
+    </div>
+    <div class="row fish-contacter-row">
+        <div class="col-xs-6">
+            <span>公司/职业<i>*</i></span>
+        </div>
+        <div class="col-xs-14">
+            <input class="fish-apply-input  col-xs-20" placeholder="向其他联络员介绍你自己" />
+        </div>
+    </div>
 
-<div class="row fish-margin-top applynew-row">
-    <div class="col-xs-4">
-        <p>服务区域<i>*</i></p>
-    </div>
-    <div class="col-xs-8 applyarea">
-        <p>每个联络员可申请服务本市/县<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></p>
-    </div>
-    <div class="col-xs-4">
-       <p>详细地址<i>*</i></p>
-    </div>
-    <div class="col-xs-8 applyarea">
-        <p>请输入你的详细居住地址</p>
-    </div>
-    <div class="col-xs-4">
-       <p>公司/职业<i>*</i></p>
-    </div>
-    <div class="col-xs-8 applyarea">
-        <p>向其他联络员介绍你自己</p>
-    </div>
-</div>
-<div class="row">
-    <div class="col-xs-9">
-        <div class="row">
-            <div class="col-xs-4">
-                <p>钓龄<i>*</i></p>
+    <div class="row fish-margin-top">
+        <div class="col-xs-14 fish-contacter-row">
+            <div class="row">
+                <div class="col-xs-6">
+                    <span>钓龄<i>*</i></span>
+                </div>
+                <div class="col-xs-14 text-right">
+                    <a href="javascript:;"> <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+                </div>
             </div>
-            <div class="col-xs-8 ">
-                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+            <div class="row">
+                <div class="col-xs-9">
+                    <span>所属俱乐部</span>
+                </div>
+                <div class="col-xs-11 text-right ">
+                    <input class="fish-apply-input col-xs-20" placeholder="" />
+                </div>
             </div>
-            <div class="col-xs-12">
-                <p>所属俱乐部</p>
+        </div>
+        <div class="col-xs-6 text-center fish-contacter-upload-part">
+            <div class="fish-contacter-upload">
+                <div class="fish-contacter-upload-icon">
+                    <i class="fa fa-camera fish-icon" aria-hidden="true"></i>
+                </div>
+                <span>请上传</span>
+                <br/>
+                <span>免冠正面照</span>
             </div>
         </div>
     </div>
-        <div class="col-xs-3">
-            <div>
-                <input type="file" name="pic" id="pic"capture="camera" accept="image/*" class="upload-input" />
-                <img src="/images/icon-camera.png" />
-                <span class="center-block">请上传免冠正面照</span>
-            </div>
+    <div class="row ">
+        <div class="col-xs-20 text-center fish-margin-vertical">
+            <i class="fa fa-check-circle-o fish-contacter-icon-correct" aria-hidden="true"></i>
+            <span>本人已阅读，并同意《联络员的职责与权限》</span>
         </div>
-</div>
-<div class="row">
-    <div class="col-xs-10 col-xs-offset-1">
-        <img class="icon-correct" src="/images/icon-correct.png"   />
-        <span>本人已阅读，并同意《联络员的职责与权限》</span>
     </div>
-</div>
-<div>
-    <button type="button" class="btn fish-btn-confirm btn-lg btn-block btn-primary col-md-10 col-md-offset-1 fish-margin-vertical" data-toggle="modal" data-target="#myModal">确定</button>
+    <div>
+        <button type="button"
+                class="btn fish-btn-confirm btn-lg btn-block btn-primary col-md-10 col-md-offset-1 fish-margin-vertical"
+                data-toggle="modal" data-target="#myModal">确定
+        </button>
 
+    </div>
 </div>
 </body>
 </html>

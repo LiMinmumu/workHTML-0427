@@ -200,6 +200,7 @@ input::-webkit-input-placeholder{
 }
 /*所有申请结果页的button样式*/
 .fish-applybtn{
+    text-align: center;
     border: none;
     background-color: #00c4cc;
     color:white;
@@ -212,4 +213,8 @@ input::-webkit-input-placeholder{
 /*申请结果页正常显示字体*/
 .fish-text-normal{
     font-weight: 200!important;
+}
+/*申请结果失败*/
+.fish-greycolor-icon{
+    color: #999999;
 }

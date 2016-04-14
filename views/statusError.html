@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/contacter.css"/>
     <script type="text/javascript" src="/js/jquery.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-    <title>审核中</title>
+    <title>审核失败</title>
 </head>
 <body>
 <!--头部导航-->
@@ -26,17 +26,23 @@
         </a>
     </h1>
 </header>
-<!--申请信息-->
+<!--申请报错-->
 <div class="container-fluid">
     <div class="row ">
         <div class="col-xs-10 col-xs-offset-1 text-center fish-apply-statusbg">
-            <img class="img-responsive  fish-icon fish-icon-success" src="/images/icon-loading.png"/>
+            <span class="glyphicon glyphicon-remove-sign fish-icon fish-icon-success fish-greycolor-icon"
+                  aria-hidden="true"></span>
 
-            <p>您的申请已提交 审核中</p>
+            <p>审核失败！</p>
+            <span>失败原因：</span><span id="errorReason">xxxxxxxxxxxxxxxxxxxxx</span>
 
-            <p class="fish-text-normal">我们将尽快进行审核，请耐心等待</p>
+            <p class="fish-text-normal">请前往修改并重新提交申请</p>
         </div>
     </div>
+    <div class="row">
+        <a href="javascript:;" class="btn col-xs-10 btn-lg col-xs-offset-1 fish-applybtn">重新申请</a>
+    </div>
 </div>
+
 </body>
 </html>

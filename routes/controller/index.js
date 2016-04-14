@@ -34,7 +34,13 @@ router.get("/statusSuccess",function(req,res,next){
 router.get("/checkPass",function(req,res,next){
     res.render("checkPass");
 });
+router.get("/statusReadyContacter",function(req,res,next){
+    res.render("statusReadyContacter");
+});
 router.get("/statusWaiting",function(req,res,next){
     res.render("statusWaiting");
+});
+router.get("/statusError",function(req,res,next){
+    res.render("statusError");
 });
 module.exports = router;

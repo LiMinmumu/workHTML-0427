@@ -30,43 +30,47 @@
 <!--导航页-->
 <img src="/images/banner.png" data-rel="" alt="" class="img-responsive center-block"/>
 <!--登录表单-->
-<div class="row">
-    <div class="col-md-10 col-md-offset-1">
-        <img src="/images/contacter.png" data-rel="" alt="" class="img-responsive center-block fish-margin-top"/>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <img src="/images/contacter.png" data-rel="" alt="" class="img-responsive center-block fish-margin-top"/>
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-10 col-md-offset-1 center-block fish-margin-vertical">
-        <h5 class="text-center">请先验证手机号</h5>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1 center-block fish-margin-vertical">
+            <h5 class="text-center">请先验证手机号</h5>
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
-        <form class="fish-margin-vertical col-md-10 col-md-offset-1">
-            <div class="form-group has-feedback">
-                <div class="input-group fish-round">
-                    <span class="input-group-addon"><img src="/images/icon-phone.png" /></span>
-                    <input type="text" class="form-control input-lg" id="#1" placeholder="请输入手机号">
-               </div>
-            </div>
-            <div class="form-group has-feedback">
-                <div class="input-group fish-round">
-                    <span class="input-group-addon"><img src="/images/icon-val.png" /></span>
-                    <input type="text" class="form-control input-lg" id="#2" placeholder="请输入验证码">
-                    <a class="fish-get-code form-control-feedback" href="javascript:;">获取验证码</a>
+    <div class="row">
+        <div class="col-md-12">
+            <form class="fish-margin-vertical col-md-10 col-md-offset-1">
+                <div class="form-group has-feedback">
+                    <div class="input-group fish-round">
+                        <span class="input-group-addon"><img src="/images/icon-phone.png"/></span>
+                        <input type="text" class="form-control input-lg" id="#1" placeholder="请输入手机号">
+                    </div>
                 </div>
+                <div class="form-group has-feedback">
+                    <div class="input-group fish-round">
+                        <span class="input-group-addon"><img src="/images/icon-val.png"/></span>
+                        <input type="text" class="form-control input-lg" id="#2" placeholder="请输入验证码">
+                        <a class="fish-get-code form-control-feedback" href="javascript:;">获取验证码</a>
+                    </div>
 
-            </div>
-            <button type="button" class="btn fish-btn-confirm btn-lg btn-block col-md-10 col-md-offset-1 fish-margin-vertical" data-toggle="modal" data-target="#myModal">确定</button>
-        </form>
+                </div>
+                <a href="javascript:;"
+                   class="btn fish-btn-confirm btn-lg btn-block col-md-10 col-md-offset-1 fish-margin-vertical"
+                   data-toggle="modal" data-target="#myModal">确定</a>
+            </form>
+        </div>
     </div>
-</div>
 
-<!--弹出窗口-->
-<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="myModal">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            ...
+    <!--弹出窗口-->
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="myModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                ...
+            </div>
         </div>
     </div>
 </div>

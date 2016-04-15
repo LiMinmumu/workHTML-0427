@@ -25,8 +25,8 @@ router.get("/min_login",function (req,res,next) {
 router.get("/login",function(req,res,next){
     res.render("login");
 });
-router.get("/applynew",function(req,res,next){
-    res.render("applynew");
+router.get("/applyNewContacter",function(req,res,next){
+    res.render("applyNewContacter");
 });
 router.get("/statusSuccess",function(req,res,next){
     res.render("statusSuccess");
@@ -42,5 +42,8 @@ router.get("/statusWaiting",function(req,res,next){
 });
 router.get("/statusError",function(req,res,next){
     res.render("statusError");
+});
+router.get("/contacterAgreement",function(req,res,next){
+    res.render("contacterAgreement");
 });
 module.exports = router;

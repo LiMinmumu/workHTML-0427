@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"
           content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,initial-scale=1"/>
-    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
-    <!--<link rel="stylesheet" href="/css/font-awesome.min.css"/>-->
+    <link rel="stylesheet" href="/css/bootstrapChange.min.css"/>
+    <link rel="stylesheet" href="/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="/css/contacter.css"/>
     <script type="text/javascript" src="/js/jquery.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
@@ -32,44 +32,47 @@
 <!--登录表单-->
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-10 col-md-offset-1">
+        <div class="col-xs-22">
             <img src="/images/contacter.png" data-rel="" alt="" class="img-responsive center-block fish-margin-top"/>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-10 col-md-offset-1 center-block fish-margin-vertical">
+        <div class="col-xs-20 center-block">
             <h5 class="text-center">请先验证手机号</h5>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12">
-            <form class="fish-margin-vertical col-md-10 col-md-offset-1">
-                <div class="form-group has-feedback">
-                    <div class="input-group fish-round">
-                        <span class="input-group-addon"><img src="/images/icon-phone.png"/></span>
-                        <input type="text" class="form-control input-lg" id="#1" placeholder="请输入手机号">
-                    </div>
-                </div>
-                <div class="form-group has-feedback">
-                    <div class="input-group fish-round">
-                        <span class="input-group-addon"><img src="/images/icon-val.png"/></span>
-                        <input type="text" class="form-control input-lg" id="#2" placeholder="请输入验证码">
-                        <a class="fish-get-code form-control-feedback" href="javascript:;">获取验证码</a>
-                    </div>
+        <div class="col-xs-20">
+
+                <div class="form-group has-feedback fish-round">
+
+                    <span class="fish-input-group-addon"><img src="/images/icon-phone.png"/></span>
+                    <input type="text" class="form-control input-lg" id="#1" placeholder="请输入手机号">
 
                 </div>
-                <a href="javascript:;"
-                   class="btn fish-btn-confirm btn-lg btn-block col-md-10 col-md-offset-1 fish-margin-vertical"
-                   data-toggle="modal" data-target="#myModal">确定</a>
-            </form>
+                <div class="form-group has-feedback fish-round fish-round2">
+                    <span class="fish-input-group-addon"><img src="/images/icon-val.png"/></span>
+                    <input type="text" class="form-control input-lg" id="#2" placeholder="请输入验证码">
+                    <a class="fish-get-code form-control-feedback" href="javascript:;">获取验证码</a>
+                </div>
+
         </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-20">
+            <a href="javascript:;"
+               class="btn fish-btn-confirm btn-lg btn-block col-md-10 col-md-offset-1 fish-margin-vertical"
+               data-toggle="modal" data-target="#myModal">确定</a>
+        </div>
+
     </div>
 
     <!--弹出窗口-->
     <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="myModal">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
-                ...
+                <p>申请钓天下区域联络员<br />请先成为中钓协会员</p>
+                <p>前往入会</p>
             </div>
         </div>
     </div>

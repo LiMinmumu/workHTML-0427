@@ -65,6 +65,18 @@ body,html{
 .fish-margin-vertical{
     margin:16px 0;
 }
+.fish-margin-bottom{
+    margin: 0 0 16px 0;
+}
+.fish-margin-bottom-xg{
+    margin: 0 0 32px 0;
+}
+.fish-margin-bottom-lg{
+    margin: 0 0 76px 0;
+}
+.fish-padding-bottom-lg{
+    padding-bottom: 76px;
+}
 /*登陆页输入*/
 
 .fish-input-group-addon img {
@@ -187,6 +199,7 @@ input::-webkit-input-placeholder{
 }
 /*申请结果页图标*/
 .fish-apply-statusbg{
+    padding: 5px 10px;
     background-color: white;
 }
 
@@ -229,11 +242,36 @@ input::-webkit-input-placeholder{
     color: #999999;
 }
 /*申请协议页面*/
-.fish-agreement-hr{
-    font-size: xx-small;
-    background: #000;
-    margin-right: .5em;
+
+.fish-apply-statusbg h4{
+    font-weight: bold;
+    margin: 20px 0;
+    border-left: 3px solid black;
+    padding-left: 10px;
+    font-size: 1.1em;
+    height: 15px;
+    line-height: 15px;
 }
-.fish-margintop-agreement{
-    margin-top: 100px;
+.fish-agreement-panel{
+    height: 60px;
+    position: fixed;
+    bottom:0;
+    background: #FFFFFF;
+}
+.fish-agreement-panel i{
+    font-size: 1.7em;
+    font-weight: 100;
+    line-height: 60px;
+}
+.fish-agreement-panel p{
+    font-size: 0.4em;
+    margin: 10px 0;
+    padding: 0;
+    font-weight: lighter;
+}
+.fish-agreement-panel a{
+   font-weight: lighter;
+    font-size: 1.3em;
+    padding:10px 25px;
+    margin: 7px 0;
 }

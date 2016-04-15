@@ -46,4 +46,7 @@ router.get("/statusError",function(req,res,next){
 router.get("/contacterAgreement",function(req,res,next){
     res.render("contacterAgreement");
 });
+router.get("/contacterHomepage",function(req,res,next){
+    res.render("contacterHomepage");
+});
 module.exports = router;

@@ -229,6 +229,7 @@ input::-webkit-input-placeholder{
     color: #999999;
 }
 /*申请协议页面*/
+
 .fish-agreement-hr{
     font-size: xx-small;
     background: #000;
@@ -236,4 +237,9 @@ input::-webkit-input-placeholder{
 }
 .fish-margintop-agreement{
     margin-top: 100px;
+}
+/*联络员主页*/
+.fish-home-background{
+    height: 160px;
+    background: gray url("../images/member-bg.png") center;
 }

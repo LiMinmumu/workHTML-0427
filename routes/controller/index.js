@@ -61,4 +61,13 @@ router.get("/contacterContributionsDetails",function(req,res,next){
 router.get("/contacterNotice",function(req,res,next){
     res.render("contacterNotice");
 });
+router.get("/contacterNoticeDetail",function(req,res,next){
+    res.render("contacterNoticeDetail");
+});
+router.get("/contacterResourceLibrary",function(req,res,next){
+    res.render("contacterResourceLibrary");
+});
+router.get("/contacterResourceDetail",function(req,res,next){
+    res.render("contacterResourceDetail");
+});
 module.exports = router;

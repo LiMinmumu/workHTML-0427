@@ -38,7 +38,7 @@ body, html {
 .fish-header .fish-header-left a {
     display: inline-block;
     min-width: 36px;
-    text-align: center;
+    text-align: left;
     color: #eee;
 }
 
@@ -580,3 +580,87 @@ input::-webkit-input-placeholder {
     padding-bottom: 0;
 }
 /*联络员贡献详细页样式结束*/
+.fish-contacter-notice li, .fish-contacter-notice li ul{
+    height: 75px;
+}
+.fish-contacter-notice>li{
+    width: 100%;
+    background-color: #ffffff;
+}
+.fish-contacter-notice ul{
+    padding: 10px;
+    background-color: #ffffff;
+    border-bottom: 1px solid  #F5F5F5;
+}
+.fish-contacter-notice img{
+    height: 50px;
+}
+.fish-contacter-notice h2{
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 5px
+}
+.fish-contacter-notice .col-xs-10 {
+    padding-left: 0;
+}
+/*消息页样式结束*/
+.fish-contacter-notice-detail{
+    height: 75px;
+    margin: 5px 5px 0 5px;
+}
+.fish-notice-details{
+    padding: 10px 0;
+    margin: 0 5px;
+    background-color: #ffffff;
+}
+.fish-notice-details p{
+    text-indent: 1.8em;
+    line-height: 1;
+}
+/*通知正文样式结束*/
+.fish-contacter-resource-list{
+    height: 135px;
+    background-color: #ffffff;
+}
+.fish-contacter-resource-list li{
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid  #F5F5F5;
+    line-height: 45px;
+    padding-left: 10px;
+}
+.fish-contacter-resource-list h3{
+    margin: 0;
+    display: inline-block;
+    font-size: 1em;
+    width: 77%;
+    font-weight: 600;
+}
+/*基本资料页面样式结束*/
+.fish-resource-downloadicon {
+    margin-left: 3%;
+    padding: 0 3px 0 10px;
+    border-left: 1px solid #F5F5F5;
+}
+/*可下载资料列表页样式结束*/
+.fish-contacter-resource-detail-title{
+    display: inline-block;
+    width: 100%;
+    height: 50px!important;
+    padding: 0!important;
+    margin: 0!important;
+    line-height: 50px!important;
+}
+.fish-contacter-resource-detail-title>li{
+    height: 50px!important;
+    line-height: 50px;
+}
+.fish-contacter-resource-detail-title h2{
+    margin: 15px 0;
+}
+.fish-notice-details-text{
+    padding-top: 0;
+}
+.fish-notice-details-text p{
+    margin-top:20px;
+}

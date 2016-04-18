@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="/css/contacter.css"/>
     <script type="text/javascript" src="/js/jquery.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/touch-0.2.14.min.js"></script>
+    <script type="text/javascript" src="/js/contacterHomepage.js"></script>
     <title>联络员主页</title>
 </head>
 <body>
@@ -90,580 +92,583 @@
         </ul>
     </li>
 </ul>
-<ul class="list-inline text-center fish-home-ranking">
+<ul id="fishHomeRankingTabs" class="list-inline text-center fish-home-ranking">
     <li class="col-xs-5 active">月榜</li>
     <li class="col-xs-5 ">资讯榜</li>
     <li class="col-xs-5">会员榜</li>
     <li class="col-xs-5">商户榜</li>
 </ul>
-<!--月榜页面-->
-<div class="fish-home-monthranking-details">
-    <div class="container-fluid">
-        <div class="row fish-home-monthranking">
-            <div class="col-xs-20 fish-contacter-row text-center">
-                <h6>全国联络员月贡献值排行榜，每月1号凌晨重置。</h6>
+<div class="fish-home-ranking-panels">
+    <!--月榜页面-->
+    <div class="fish-home-monthranking-details fish-home-ranking-panel">
+        <div class="container-fluid">
+            <div class="row fish-home-monthranking">
+                <div class="col-xs-20 fish-contacter-row text-center">
+                    <h6>全国联络员月贡献值排行榜，每月1号凌晨重置。</h6>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row fish-home-monthranking-detail text-center">
+                <div class="col-xs-4">
+                    <img class="img-circle img-thumbnail" src="/images/icon-portrait-03.png"/>
+                </div>
+                <div class="col-xs-6 text-left fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>王小军</h3></li>
+                        <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>月贡献</h3></li>
+                        <li><span>566</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>排名</h3></li>
+                        <li><span>26</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid fish-home-rankings">
+            <div class="row fish-home-monthranking-detail text-center">
+                <div class="col-xs-4">
+                    <img src="/images/icon-portrait-01.png"/>
+                </div>
+                <div class="col-xs-6 text-left fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>王小军</h3></li>
+                        <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>月贡献</h3></li>
+                        <li><span>566</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 text-center fish-home-ranking-userinfo fish-ranking-numcolor1">
+                    <p>1</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row fish-home-monthranking-detail text-center">
+                <div class="col-xs-4">
+                    <img src="/images/icon-portrait-01.png"/>
+                </div>
+                <div class="col-xs-6 text-left fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>王小军</h3></li>
+                        <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>月贡献</h3></li>
+                        <li><span>566</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 text-center fish-home-ranking-userinfo fish-ranking-numcolor2">
+                    <p>2</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row fish-home-monthranking-detail text-center">
+                <div class="col-xs-4">
+                    <img src="/images/icon-portrait-01.png"/>
+                </div>
+                <div class="col-xs-6 text-left fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>王小军</h3></li>
+                        <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>月贡献</h3></li>
+                        <li><span>566</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 text-center fish-home-ranking-userinfo fish-ranking-numcolor3">
+                    <p>3</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row fish-home-monthranking-detail text-center">
+                <div class="col-xs-4">
+                    <img src="/images/icon-portrait-01.png"/>
+                </div>
+                <div class="col-xs-6 text-left fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>王小军</h3></li>
+                        <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>月贡献</h3></li>
+                        <li><span>566</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 text-center fish-home-ranking-userinfo fish-ranking-numcolornormal">
+                    <p>4</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row fish-home-monthranking-detail text-center">
+                <div class="col-xs-4">
+                    <img src="/images/icon-portrait-01.png"/>
+                </div>
+                <div class="col-xs-6 text-left fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>王小军</h3></li>
+                        <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>月贡献</h3></li>
+                        <li><span>566</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 text-center fish-home-ranking-userinfo fish-ranking-numcolornormal">
+                    <p>5</p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row fish-home-monthranking-detail text-center">
-            <div class="col-xs-4">
-                <img class="img-circle img-thumbnail" src="/images/icon-portrait-03.png"/>
+    <!--资讯榜页面-->
+    <div class="fish-home-newsranking-details fish-home-ranking-panel">
+        <div class="container-fluid">
+            <div class="row fish-home-monthranking">
+                <div class="col-xs-20 fish-contacter-row text-center">
+                    <h6>联络员申报地区资讯采纳排行榜</h6>
+                </div>
             </div>
-            <div class="col-xs-6 text-left fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>王小军</h3></li>
-                    <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
-                </ul>
+        </div>
+        <div class="container-fluid">
+            <div class="row fish-home-monthranking-detail text-center">
+                <div class="col-xs-4">
+                    <img class="img-circle img-thumbnail" src="/images/icon-portrait-03.png"/>
+                </div>
+                <div class="col-xs-6 text-left fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>王小军</h3></li>
+                        <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-5 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>采纳&nbsp220&nbsp篇</h3></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>排名</h3></li>
+                        <li><span>26</span></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>月贡献</h3></li>
-                    <li><span>566</span></li>
-                </ul>
+        </div>
+        <div class="container-fluid fish-home-rankings">
+            <div class="row fish-home-monthranking-detail text-center">
+                <div class="col-xs-4">
+                    <img src="/images/icon-portrait-01.png"/>
+                </div>
+                <div class="col-xs-6 text-left fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>王小军</h3></li>
+                        <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-5 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>采纳&nbsp220&nbsp篇</h3></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolor1">
+                    <p>1</p>
+                </div>
             </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>排名</h3></li>
-                    <li><span>26</span></li>
-                </ul>
+        </div>
+        <div class="container-fluid">
+            <div class="row fish-home-monthranking-detail text-center">
+                <div class="col-xs-4">
+                    <img src="/images/icon-portrait-01.png"/>
+                </div>
+                <div class="col-xs-6 text-left fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>王小军</h3></li>
+                        <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-5 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>采纳&nbsp220&nbsp篇</h3></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolor2">
+                    <p>2</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row fish-home-monthranking-detail text-center">
+                <div class="col-xs-4">
+                    <img src="/images/icon-portrait-01.png"/>
+                </div>
+                <div class="col-xs-6 text-left fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>王小军</h3></li>
+                        <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-5 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>采纳&nbsp220&nbsp篇</h3></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolor3">
+                    <p>3</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row fish-home-monthranking-detail text-center">
+                <div class="col-xs-4">
+                    <img src="/images/icon-portrait-01.png"/>
+                </div>
+                <div class="col-xs-6 text-left fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>王小军</h3></li>
+                        <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-5 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>采纳&nbsp220&nbsp篇</h3></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolornormal">
+                    <p>4</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row fish-home-monthranking-detail text-center">
+                <div class="col-xs-4">
+                    <img src="/images/icon-portrait-01.png"/>
+                </div>
+                <div class="col-xs-6 text-left fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>王小军</h3></li>
+                        <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-5 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>采纳&nbsp220&nbsp篇</h3></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolornormal">
+                    <p>5</p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid fish-home-rankings">
-        <div class="row fish-home-monthranking-detail text-center">
-            <div class="col-xs-4">
-                <img src="/images/icon-portrait-01.png"/>
+    <!--会员榜页面-->
+    <div class="fish-home-memberranking-details fish-home-ranking-panel">
+        <div class="container-fluid">
+            <div class="row fish-home-monthranking">
+                <div class="col-xs-20 fish-contacter-row text-center">
+                    <h6>联络员服务地区预备会员量排行榜</h6>
+                </div>
             </div>
-            <div class="col-xs-6 text-left fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>王小军</h3></li>
-                    <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
-                </ul>
+        </div>
+        <div class="container-fluid">
+            <div class="row fish-home-monthranking-detail text-center">
+                <div class="col-xs-4">
+                    <img class="img-circle img-thumbnail" src="/images/icon-portrait-03.png"/>
+                </div>
+                <div class="col-xs-6 text-left fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>王小军</h3></li>
+                        <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-5 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>32342人</h3></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>排名</h3></li>
+                        <li><span>26</span></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>月贡献</h3></li>
-                    <li><span>566</span></li>
-                </ul>
+        </div>
+        <div class="container-fluid fish-home-rankings">
+            <div class="row fish-home-monthranking-detail text-center">
+                <div class="col-xs-4">
+                    <img src="/images/icon-portrait-01.png"/>
+                </div>
+                <div class="col-xs-6 text-left fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>王小军</h3></li>
+                        <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-5 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>32342人</h3></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolor1">
+                    <p>1</p>
+                </div>
             </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolor1">
-                <p>1</p>
+        </div>
+        <div class="container-fluid">
+            <div class="row fish-home-monthranking-detail text-center">
+                <div class="col-xs-4">
+                    <img src="/images/icon-portrait-01.png"/>
+                </div>
+                <div class="col-xs-6 text-left fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>王小军</h3></li>
+                        <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-5 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>32342人</h3></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolor2">
+                    <p>2</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row fish-home-monthranking-detail text-center">
+                <div class="col-xs-4">
+                    <img src="/images/icon-portrait-01.png"/>
+                </div>
+                <div class="col-xs-6 text-left fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>王小军</h3></li>
+                        <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-5 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>32342人</h3></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolor3">
+                    <p>3</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row fish-home-monthranking-detail text-center">
+                <div class="col-xs-4">
+                    <img src="/images/icon-portrait-01.png"/>
+                </div>
+                <div class="col-xs-6 text-left fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>王小军</h3></li>
+                        <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-5 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>32342人</h3></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolornormal">
+                    <p>4</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row fish-home-monthranking-detail text-center">
+                <div class="col-xs-4">
+                    <img src="/images/icon-portrait-01.png"/>
+                </div>
+                <div class="col-xs-6 text-left fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>王小军</h3></li>
+                        <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-5 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>32342人</h3></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolornormal">
+                    <p>5</p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row fish-home-monthranking-detail text-center">
-            <div class="col-xs-4">
-                <img src="/images/icon-portrait-01.png"/>
-            </div>
-            <div class="col-xs-6 text-left fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>王小军</h3></li>
-                    <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
-                </ul>
-            </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>月贡献</h3></li>
-                    <li><span>566</span></li>
-                </ul>
-            </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolor2">
-                <p>2</p>
+    <!--商户榜页面-->
+    <div class="fish-home-bussinessmemberranking-details fish-home-ranking-panel" >
+        <div class="container-fluid">
+            <div class="row fish-home-monthranking">
+                <div class="col-xs-20 fish-contacter-row text-center">
+                    <h6>联络员服务地区已签约商户数量排行榜</h6>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row fish-home-monthranking-detail text-center">
-            <div class="col-xs-4">
-                <img src="/images/icon-portrait-01.png"/>
-            </div>
-            <div class="col-xs-6 text-left fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>王小军</h3></li>
-                    <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
-                </ul>
-            </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>月贡献</h3></li>
-                    <li><span>566</span></li>
-                </ul>
-            </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolor3">
-                <p>3</p>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row fish-home-monthranking-detail text-center">
-            <div class="col-xs-4">
-                <img src="/images/icon-portrait-01.png"/>
-            </div>
-            <div class="col-xs-6 text-left fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>王小军</h3></li>
-                    <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
-                </ul>
-            </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>月贡献</h3></li>
-                    <li><span>566</span></li>
-                </ul>
-            </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolornormal">
-                <p>4</p>
+        <div class="container-fluid">
+            <div class="row fish-home-monthranking-detail text-center">
+                <div class="col-xs-4">
+                    <img class="img-circle img-thumbnail" src="/images/icon-portrait-03.png"/>
+                </div>
+                <div class="col-xs-6 text-left fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>王小军</h3></li>
+                        <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-5 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>203家</h3></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>排名</h3></li>
+                        <li><span>26</span></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row fish-home-monthranking-detail text-center">
-            <div class="col-xs-4">
-                <img src="/images/icon-portrait-01.png"/>
+        <div class="container-fluid fish-home-rankings">
+            <div class="row fish-home-monthranking-detail text-center">
+                <div class="col-xs-4">
+                    <img src="/images/icon-portrait-01.png"/>
+                </div>
+                <div class="col-xs-6 text-left fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>王小军</h3></li>
+                        <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-5 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>32342人</h3></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolor1">
+                    <p>1</p>
+                </div>
             </div>
-            <div class="col-xs-6 text-left fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>王小军</h3></li>
-                    <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
-                </ul>
+        </div>
+        <div class="container-fluid">
+            <div class="row fish-home-monthranking-detail text-center">
+                <div class="col-xs-4">
+                    <img src="/images/icon-portrait-01.png"/>
+                </div>
+                <div class="col-xs-6 text-left fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>王小军</h3></li>
+                        <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-5 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>32342人</h3></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolor2">
+                    <p>2</p>
+                </div>
             </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>月贡献</h3></li>
-                    <li><span>566</span></li>
-                </ul>
+        </div>
+        <div class="container-fluid">
+            <div class="row fish-home-monthranking-detail text-center">
+                <div class="col-xs-4">
+                    <img src="/images/icon-portrait-01.png"/>
+                </div>
+                <div class="col-xs-6 text-left fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>王小军</h3></li>
+                        <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-5 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>32342人</h3></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolor3">
+                    <p>3</p>
+                </div>
             </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolornormal">
-                <p>5</p>
+        </div>
+        <div class="container-fluid">
+            <div class="row fish-home-monthranking-detail text-center">
+                <div class="col-xs-4">
+                    <img src="/images/icon-portrait-01.png"/>
+                </div>
+                <div class="col-xs-6 text-left fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>王小军</h3></li>
+                        <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-5 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>32342人</h3></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolornormal">
+                    <p>4</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row fish-home-monthranking-detail text-center">
+                <div class="col-xs-4">
+                    <img src="/images/icon-portrait-01.png"/>
+                </div>
+                <div class="col-xs-6 text-left fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>王小军</h3></li>
+                        <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-5 text-center fish-home-ranking-userinfo">
+                    <ul class="list-unstyled">
+                        <li><h3>32342人</h3></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolornormal">
+                    <p>5</p>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<!--资讯榜页面-->
-<div class="fish-home-newsranking-details" style="display: none">
-    <div class="container-fluid">
-        <div class="row fish-home-monthranking">
-            <div class="col-xs-20 fish-contacter-row text-center">
-                <h6>联络员申报地区资讯采纳排行榜</h6>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row fish-home-monthranking-detail text-center">
-            <div class="col-xs-4">
-                <img class="img-circle img-thumbnail" src="/images/icon-portrait-03.png"/>
-            </div>
-            <div class="col-xs-6 text-left fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>王小军</h3></li>
-                    <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
-                </ul>
-            </div>
-            <div class="col-xs-5 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>采纳&nbsp220&nbsp篇</h3></li>
-                </ul>
-            </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>排名</h3></li>
-                    <li><span>26</span></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid fish-home-rankings">
-        <div class="row fish-home-monthranking-detail text-center">
-            <div class="col-xs-4">
-                <img src="/images/icon-portrait-01.png"/>
-            </div>
-            <div class="col-xs-6 text-left fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>王小军</h3></li>
-                    <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
-                </ul>
-            </div>
-            <div class="col-xs-5 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>采纳&nbsp220&nbsp篇</h3></li>
-                </ul>
-            </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolor1">
-                <p>1</p>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row fish-home-monthranking-detail text-center">
-            <div class="col-xs-4">
-                <img src="/images/icon-portrait-01.png"/>
-            </div>
-            <div class="col-xs-6 text-left fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>王小军</h3></li>
-                    <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
-                </ul>
-            </div>
-            <div class="col-xs-5 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>采纳&nbsp220&nbsp篇</h3></li>
-                </ul>
-            </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolor2">
-                <p>2</p>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row fish-home-monthranking-detail text-center">
-            <div class="col-xs-4">
-                <img src="/images/icon-portrait-01.png"/>
-            </div>
-            <div class="col-xs-6 text-left fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>王小军</h3></li>
-                    <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
-                </ul>
-            </div>
-            <div class="col-xs-5 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>采纳&nbsp220&nbsp篇</h3></li>
-                </ul>
-            </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolor3">
-                <p>3</p>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row fish-home-monthranking-detail text-center">
-            <div class="col-xs-4">
-                <img src="/images/icon-portrait-01.png"/>
-            </div>
-            <div class="col-xs-6 text-left fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>王小军</h3></li>
-                    <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
-                </ul>
-            </div>
-            <div class="col-xs-5 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>采纳&nbsp220&nbsp篇</h3></li>
-                </ul>
-            </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolornormal">
-                <p>4</p>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row fish-home-monthranking-detail text-center">
-            <div class="col-xs-4">
-                <img src="/images/icon-portrait-01.png"/>
-            </div>
-            <div class="col-xs-6 text-left fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>王小军</h3></li>
-                    <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
-                </ul>
-            </div>
-            <div class="col-xs-5 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>采纳&nbsp220&nbsp篇</h3></li>
-                </ul>
-            </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolornormal">
-                <p>5</p>
-            </div>
-        </div>
-    </div>
-</div>
-<!--会员榜页面-->
-<div class="fish-home-memberranking-details" style="display: none">
-    <div class="container-fluid">
-        <div class="row fish-home-monthranking">
-            <div class="col-xs-20 fish-contacter-row text-center">
-                <h6>联络员服务地区预备会员量排行榜</h6>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row fish-home-monthranking-detail text-center">
-            <div class="col-xs-4">
-                <img class="img-circle img-thumbnail" src="/images/icon-portrait-03.png"/>
-            </div>
-            <div class="col-xs-6 text-left fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>王小军</h3></li>
-                    <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
-                </ul>
-            </div>
-            <div class="col-xs-5 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>32342人</h3></li>
-                </ul>
-            </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>排名</h3></li>
-                    <li><span>26</span></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid fish-home-rankings">
-        <div class="row fish-home-monthranking-detail text-center">
-            <div class="col-xs-4">
-                <img src="/images/icon-portrait-01.png"/>
-            </div>
-            <div class="col-xs-6 text-left fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>王小军</h3></li>
-                    <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
-                </ul>
-            </div>
-            <div class="col-xs-5 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>32342人</h3></li>
-                </ul>
-            </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolor1">
-                <p>1</p>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row fish-home-monthranking-detail text-center">
-            <div class="col-xs-4">
-                <img src="/images/icon-portrait-01.png"/>
-            </div>
-            <div class="col-xs-6 text-left fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>王小军</h3></li>
-                    <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
-                </ul>
-            </div>
-            <div class="col-xs-5 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>32342人</h3></li>
-                </ul>
-            </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolor2">
-                <p>2</p>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row fish-home-monthranking-detail text-center">
-            <div class="col-xs-4">
-                <img src="/images/icon-portrait-01.png"/>
-            </div>
-            <div class="col-xs-6 text-left fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>王小军</h3></li>
-                    <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
-                </ul>
-            </div>
-            <div class="col-xs-5 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>32342人</h3></li>
-                </ul>
-            </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolor3">
-                <p>3</p>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row fish-home-monthranking-detail text-center">
-            <div class="col-xs-4">
-                <img src="/images/icon-portrait-01.png"/>
-            </div>
-            <div class="col-xs-6 text-left fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>王小军</h3></li>
-                    <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
-                </ul>
-            </div>
-            <div class="col-xs-5 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>32342人</h3></li>
-                </ul>
-            </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolornormal">
-                <p>4</p>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row fish-home-monthranking-detail text-center">
-            <div class="col-xs-4">
-                <img src="/images/icon-portrait-01.png"/>
-            </div>
-            <div class="col-xs-6 text-left fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>王小军</h3></li>
-                    <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
-                </ul>
-            </div>
-            <div class="col-xs-5 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>32342人</h3></li>
-                </ul>
-            </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolornormal">
-                <p>5</p>
-            </div>
-        </div>
-    </div>
-</div>
-<!--商户榜页面-->
-<div class="fish-home-bussinessmemberranking-details" style="display: none">
-    <div class="container-fluid">
-        <div class="row fish-home-monthranking">
-            <div class="col-xs-20 fish-contacter-row text-center">
-                <h6>联络员服务地区预备会员量排行榜</h6>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row fish-home-monthranking-detail text-center">
-            <div class="col-xs-4">
-                <img class="img-circle img-thumbnail" src="/images/icon-portrait-03.png"/>
-            </div>
-            <div class="col-xs-6 text-left fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>王小军</h3></li>
-                    <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
-                </ul>
-            </div>
-            <div class="col-xs-5 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>203家</h3></li>
-                </ul>
-            </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>排名</h3></li>
-                    <li><span>26</span></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid fish-home-rankings">
-        <div class="row fish-home-monthranking-detail text-center">
-            <div class="col-xs-4">
-                <img src="/images/icon-portrait-01.png"/>
-            </div>
-            <div class="col-xs-6 text-left fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>王小军</h3></li>
-                    <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
-                </ul>
-            </div>
-            <div class="col-xs-5 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>32342人</h3></li>
-                </ul>
-            </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolor1">
-                <p>1</p>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row fish-home-monthranking-detail text-center">
-            <div class="col-xs-4">
-                <img src="/images/icon-portrait-01.png"/>
-            </div>
-            <div class="col-xs-6 text-left fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>王小军</h3></li>
-                    <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
-                </ul>
-            </div>
-            <div class="col-xs-5 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>32342人</h3></li>
-                </ul>
-            </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolor2">
-                <p>2</p>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row fish-home-monthranking-detail text-center">
-            <div class="col-xs-4">
-                <img src="/images/icon-portrait-01.png"/>
-            </div>
-            <div class="col-xs-6 text-left fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>王小军</h3></li>
-                    <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
-                </ul>
-            </div>
-            <div class="col-xs-5 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>32342人</h3></li>
-                </ul>
-            </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolor3">
-                <p>3</p>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row fish-home-monthranking-detail text-center">
-            <div class="col-xs-4">
-                <img src="/images/icon-portrait-01.png"/>
-            </div>
-            <div class="col-xs-6 text-left fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>王小军</h3></li>
-                    <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
-                </ul>
-            </div>
-            <div class="col-xs-5 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>32342人</h3></li>
-                </ul>
-            </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolornormal">
-                <p>4</p>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row fish-home-monthranking-detail text-center">
-            <div class="col-xs-4">
-                <img src="/images/icon-portrait-01.png"/>
-            </div>
-            <div class="col-xs-6 text-left fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>王小军</h3></li>
-                    <li><span class="fish-greycolor-icon">浙江&nbsp杭州</span></li>
-                </ul>
-            </div>
-            <div class="col-xs-5 text-center fish-home-ranking-userinfo">
-                <ul class="list-unstyled">
-                    <li><h3>32342人</h3></li>
-                </ul>
-            </div>
-            <div class="col-xs-4 text-center fish-home-ranking-userinfo fish-ranking-numcolornormal">
-                <p>5</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container-fluid">
-    <div class="row">
-        <div class="fish-bottom-empty">
 
-        </div>
-    </div>
-</div>
+<!--<div class="container-fluid">-->
+<!--<div class="row">-->
+<!--<div class="fish-bottom-empty">-->
+
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
 </body>
 </html>

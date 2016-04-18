@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport"
-          content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,initial-scale=1"/>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,initial-scale=1"/>
     <link rel="stylesheet" href="/css/bootstrapChange.min.css"/>
     <link rel="stylesheet" href="/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="/css/contacter.css"/>
@@ -60,8 +59,7 @@
     </div>
     <div class="row">
         <div class="col-xs-20">
-            <a href="javascript:;"
-               class="btn fish-btn-confirm btn-lg btn-block col-md-10 col-md-offset-1 fish-margin-vertical"
+            <a href="javascript:;"  class="btn fish-btn-confirm btn-lg btn-block col-md-10 col-md-offset-1 fish-margin-vertical"
                data-toggle="modal" data-target="#myModal">确定</a>
         </div>
 
@@ -69,10 +67,15 @@
 
     <!--弹出窗口-->
     <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="myModal">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-lg fish-login-alert">
             <div class="modal-content">
-                <p>申请钓天下区域联络员<br />请先成为中钓协会员</p>
-                <p>前往入会</p>
+                <div class="fish-login-alerttext">
+                <p class="text-center">申请钓天下区域联络员<br />请先成为中钓协会员</p>
+                </div>
+                <div class="fish-login-alertbtn text-center">
+                    <a href="##">前往入会</a>
+                </div>
+
             </div>
         </div>
     </div>

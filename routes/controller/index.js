@@ -22,8 +22,8 @@ router.get("/min_login",function (req,res,next) {
     res.render("min_login");
 })
 
-router.get("/login",function(req,res,next){
-    res.render("login");
+router.get("/contacterLogin",function(req,res,next){
+    res.render("contacterLogin");
 });
 router.get("/applyNewContacter",function(req,res,next){
     res.render("applyNewContacter");

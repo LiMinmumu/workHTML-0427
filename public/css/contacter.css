@@ -90,10 +90,10 @@ body, html {
 
 .fish-input-group-addon img {
     position: relative;
-    left: 10px;
-    top: 35px;
-    width: 1.2em;
-    height: 1.5em;
+    left: 13px;
+    top: 31px;
+    width: 12px;
+    height: 16px;
 
 }
 
@@ -101,6 +101,7 @@ body, html {
     padding-left: 35px;
     border: none;
     border-radius: 30px;
+    font-size: 1em;
 }
 
 .input-group-addon, .fish-round .fish-form-control, .btn-lg {
@@ -109,6 +110,9 @@ body, html {
 
 .fish-round2 {
     margin-top: -25px;
+}
+.fish-round2 input{
+    padding-right: 90px!important;
 }
 
 .fish-get-code {
@@ -122,18 +126,62 @@ body, html {
     margin: 6px 0;
     font-size: 0.8em;
     color: #00c4cc;
+    pointer-events: auto;
 }
-
+/*.fish-get-code {*/
+    /*position: relative;*/
+    /*right: -196px;*/
+    /*top: -47px;*/
+    /*z-index: 99;*/
+    /*width: 100px !important;*/
+    /*border-left: 1px solid #F5F5F5;*/
+    /*height: 30px !important;*/
+    /*margin: 6px 0;*/
+    /*line-height: 34px !important;*/
+    /*font-size: 0.8em;*/
+    /*color: #00c4cc;*/
+/*}*/
 .fish-btn-confirm {
     background: #00c4cc;
     color: #FFFFFF;
     border-color: #F5F5F5 !important;
+}
+/*登陆页弹出框样式*/
+.fish-login-alert{
+    height: 100px;
+    width: 80%;
+    margin: 10px auto;
+    top: 250px;
+}
+.fish-login-alert>div {
+    height: 150px;
+    border-radius: 10px;
+    border: none;
+}
+.fish-login-alerttext{
+    border-bottom: 1px solid #F5F5F5;
+    padding: 25px 0 20px;
+}
+.fish-login-alertbtn{
+    height: 60px;
+    line-height: 60px;
+}
+.fish-login-alertbtn a{
+    color: #00c4cc;
+    font-size: 1.2em;
+    font-weight: 500;
 }
 
 /*申请联络员页面*/
 .fish-contacter-row {
     background-color: #FFFFFF;
     border-bottom: 1px solid #F5F5F5;
+}
+.fish-contacter-row input{
+    outline: none;
+}
+.form-control:focus{
+    box-shadow: none;
 }
 
 .fish-contacter-row-info {
@@ -317,6 +365,7 @@ input::-webkit-input-placeholder {
 .fish-home {
     position: absolute;
     top: 49px;
+    /*eclipse上改成了0，因为头部删除了*/
     height: 160px;
     width:100%;
 }
@@ -615,7 +664,7 @@ input::-webkit-input-placeholder {
 }
 .fish-notice-details p{
     text-indent: 1.8em;
-    line-height: 1;
+    line-height: 1em;
 }
 /*通知正文样式结束*/
 .fish-contacter-resource-list{

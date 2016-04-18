@@ -5,7 +5,8 @@
     font-weight: normal;
     font-style: normal;
 }
-body,html{
+
+body, html {
     font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
     font-weight: normal;
     background-color: #F5F5F5;
@@ -37,7 +38,7 @@ body,html{
 .fish-header .fish-header-left a {
     display: inline-block;
     min-width: 36px;
-    text-align: center;
+    text-align: left;
     color: #eee;
 }
 
@@ -50,10 +51,12 @@ body,html{
     word-wrap: normal;
     white-space: nowrap;
 }
-.fish-header .fish-header-title a{
+
+.fish-header .fish-header-title a {
     line-height: 49px;
-    color:#ffffff;
+    color: #ffffff;
 }
+
 /*共用边距*/
 .fish-margin-top {
     margin-top: 16px;
@@ -62,9 +65,27 @@ body,html{
 .fish-padding-top {
     padding-top: 16px;
 }
-.fish-margin-vertical{
-    margin:16px 0;
+
+.fish-margin-vertical {
+    margin: 16px 0;
 }
+
+.fish-margin-bottom {
+    margin: 0 0 16px 0;
+}
+
+.fish-margin-bottom-xg {
+    margin: 0 0 32px 0;
+}
+
+.fish-margin-bottom-lg {
+    margin: 0 0 76px 0;
+}
+
+.fish-padding-bottom-lg {
+    padding-bottom: 76px;
+}
+
 /*登陆页输入*/
 
 .fish-input-group-addon img {
@@ -75,39 +96,43 @@ body,html{
     height: 1.5em;
 
 }
-.fish-round input{
+
+.fish-round input {
     padding-left: 35px;
     border: none;
     border-radius: 30px;
 }
- .input-group-addon,.fish-round .fish-form-control,.btn-lg {
+
+.input-group-addon, .fish-round .fish-form-control, .btn-lg {
     border-radius: 30px;
 }
- .fish-round2{
-    margin-top: -25px;
- }
 
-.fish-get-code{
-    line-height: 34px!important;
+.fish-round2 {
+    margin-top: -25px;
+}
+
+.fish-get-code {
+    line-height: 34px !important;
     position: absolute;
-    right:0;
-    top:23px;
-    width: 100px!important;
+    right: 0;
+    top: 23px;
+    width: 100px !important;
     border-left: 1px solid #F5F5F5;
-    height: 30px!important;
+    height: 30px !important;
     margin: 6px 0;
     font-size: 0.8em;
     color: #00c4cc;
 }
-.fish-btn-confirm{
+
+.fish-btn-confirm {
     background: #00c4cc;
     color: #FFFFFF;
-    border-color:#F5F5F5!important;
+    border-color: #F5F5F5 !important;
 }
 
 /*申请联络员页面*/
 .fish-contacter-row {
-    background-color: white;
+    background-color: #FFFFFF;
     border-bottom: 1px solid #F5F5F5;
 }
 
@@ -115,52 +140,61 @@ body,html{
     height: 70px;
     padding: 10px 0 !important;
 }
+
 .fish-contacter-row span {
     line-height: 50px;
     height: 50px;
 }
-.fish-contacter-row .col-xs-6,.fish-contacter-applyinfo{
-    padding:0 0 0 5%!important;
+
+.fish-contacter-row .col-xs-6, .fish-contacter-applyinfo {
+    padding: 0 0 0 5% !important;
 }
 
-.fish-contacter-row .col-xs-6 span i{
-    color:red;
+.fish-contacter-row .col-xs-6 span i {
+    color: red;
 }
+
 .fish-contacter-user-info-label span {
     display: inline-block;
     height: 50px;
     line-height: 18px;
 }
+
 .fish-contacter-user-info-content {
     padding: 0 !important;
 }
+
 .fish-icon {
     color: #00c4cc;
 }
+
 .fish-contacter-right span {
     line-height: 50px;
     padding-right: 30px;
 }
-.fish-contacter-rightarrow i{
+
+.fish-contacter-rightarrow i {
     float: right;
     line-height: 50px;
 }
-.fish-contacter-row .fish-apply-input{
+
+.fish-contacter-row .fish-apply-input {
     height: 50px;
     line-height: 50px;
     border: none;
     padding-left: 16%;
 }
-.fish-contacter-upload-part{
+
+.fish-contacter-upload-part {
     padding: 0 2px;
 }
+
 .fish-contacter-upload {
     padding: 13px 0 !important;
     border: solid 1px #8ec7df;
     background: #FFFFFF;
     height: 100px;
 }
-
 
 .fish-contacter-upload-icon {
     font-size: 1.8em;
@@ -177,63 +211,456 @@ body,html{
     height: 14px;
 }
 
-
 /*输入框placegolder位置*/
-input:-moz-placeholder{
+input:-moz-placeholder {
     text-align: left;
-}
-input::-webkit-input-placeholder{
-    text-align: left;
-}
-/*申请结果页图标*/
-.fish-apply-statusbg{
-    background-color: white;
 }
 
-.fish-apply-statusbg p{
+input::-webkit-input-placeholder {
+    text-align: left;
+}
+
+/*申请结果页图标*/
+.fish-apply-statusbg {
+    padding: 5px 10px;
+    background-color: #FFFFFF;
+}
+
+.fish-apply-statusbg p {
     font-weight: 600;
 }
+
 /*等待审核页*/
-.fish-apply-statusbg img{
+.fish-apply-statusbg img {
     width: 75px;
-    height:75px;
+    height: 75px;
     display: inline-block;
     margin: 35px
 }
+
 /*申请成功页*/
-.fish-icon-success{
+.fish-icon-success {
     display: block;
     text-align: center;
     font-size: 100px;
     line-height: 150px;
 }
+
 /*所有申请结果页的button样式*/
-.fish-applybtn{
+.fish-applybtn {
     text-align: center;
     border: none;
     background-color: #00c4cc;
-    color:white;
+    color: #FFFFFF;
     margin-top: 30px;
 }
+
 /*申请结果页灰色字体*/
-.fish-greycolor-text{
+.fish-greycolor-text {
     color: #999999;
     font-size: small;
 }
+
 /*申请结果页正常显示字体*/
-.fish-text-normal{
-    font-weight: 200!important;
+.fish-text-normal {
+    font-weight: 200 !important;
 }
+
 /*申请结果失败*/
-.fish-greycolor-icon{
+.fish-greycolor-icon {
     color: #999999;
 }
+
 /*申请协议页面*/
-.fish-agreement-hr{
-    font-size: xx-small;
-    background: #000;
-    margin-right: .5em;
+
+.fish-apply-statusbg h4 {
+    font-weight: bold;
+    margin: 20px 0;
+    border-left: 2px solid black;
+    padding-left: 10px;
+    font-size: 1.1em;
+    height: 15px;
+    line-height: 15px;
 }
-.fish-margintop-agreement{
-    margin-top: 100px;
+
+.fish-agreement-panel {
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    background: #FFFFFF;
+}
+
+.fish-agreement-panel i {
+    font-size: 1.7em;
+    font-weight: 100;
+    line-height: 60px;
+}
+
+.fish-agreement-panel p {
+    font-size: 0.4em;
+    margin: 10px 0;
+    padding: 0;
+    font-weight: lighter;
+}
+
+.fish-agreement-panel a {
+    font-weight: lighter;
+    font-size: 1.3em;
+    padding: 10px 25px;
+    margin: 7px 0;
+}
+
+/*联络员主页样式开始*/
+.fish-home-panel{
+    height:160px
+}
+.fish-home {
+    position: absolute;
+    top: 49px;
+    height: 160px;
+    width:100%;
+}
+
+.fish-home .img-responsive {
+    height: 160px;
+    width: 100%;
+}
+
+.fish-home-userinfo-bg, .fish-home-userinfo {
+    position: relative;
+    height: 80px;
+}
+.fish-home-userinfo-bg {
+    background: #000000;
+    opacity: 0.4;
+    top: -80px;
+}
+.fish-home-userinfo {
+    top: -160px;
+}
+.fish-home-userinfo-head{
+    padding:0;
+    line-height: 80px;
+}
+.fish-home-userinfo-head,.fish-home-userinfo-detail{
+    height: 80px;
+}
+.fish-home-userinfo-head img{
+    height: 60px;
+}
+.fish-home-userinfo-detail{
+    color: #ffffff;
+    height: 80px!important;
+    overflow: hidden;
+}
+.fish-home-userinfo-detail ul {
+    margin: 10px auto;
+}
+.fish-home-userinfo-detail ul li{
+    color: #ffffff;
+}
+.fish-home-userinfo-detail h3{
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 1.2em;
+}
+.fish-home-userinfo-detail span{
+    font-size: .5em;
+}
+.fish-home-userinfo-contribution dl{
+    margin: 0;
+}
+.fish-home-userinfo-contribution{
+    margin-top: 10px;
+    border-left: 1px solid #ffffff;
+    font-size: .8em;
+    padding-left: 20px;
+    color: #ffffff;
+}
+.fish-home-userinfo-contribution dd{
+    vertical-align: center;
+}
+.fish-userhome-rightarrow{
+    line-height: 80px;
+    color: #ffffff;
+    padding-left: 0;
+}
+/*联络员主页头部上下两层样式结束*/
+.fish-home-broadcast{
+    margin-top: 5px;
+    height: 40px;
+    background-color: #ffffff;
+    line-height: 40px;
+}
+.fish-home-broadcast img{
+    height:15px;
+
+}
+.fish-home-broadcast-detail{
+    height:40px;
+}
+.fish-home-broadcast h5{
+    margin:0;
+    font-size: 0.9em;
+    line-height: 40px;
+}
+/*联络员主页广播样式结束*/
+.fish-home-tasks{
+    width: 100%;
+    height: 75px;
+    margin:5px 0 0 0;
+    background-color: #ffffff;
+}
+.fish-home-tasks>li{
+    height: 75px;
+}
+.fish-home-tasks .list-unstyled{
+    margin-top: 15px;
+}
+.fish-home-tasks .list-unstyled>li:first-child{
+    margin-bottom: 10px;
+}
+.fish-home-tasks .list-unstyled img{
+    height: 24px;
+}
+.fish-home-tasks .list-unstyled li span{
+    font-size: .8em;
+}
+/*联络员主页横向任务栏样式结束*/
+.fish-home-ranking{
+    height: 40px;
+    margin-bottom: 0;
+    line-height: 40px;
+}
+.fish-home-ranking .active{
+    color: #00c4cc;
+    border-bottom: 1px solid #00c4cc;
+}
+.fish-home-monthranking-detail{
+    height: 75px;
+    background-color: #ffffff;
+}
+.fish-home-monthranking-detail img{
+    height:50px;
+}
+.fish-home-monthranking-detail div:first-child{
+    line-height: 75px;
+}
+.fish-home-ranking-userinfo{
+    height: 75px;
+    padding-left: 0;
+}
+.fish-home-ranking-userinfo h3{
+    font-size: .9em;
+    margin-bottom: 5px;
+}
+.fish-home-ranking-userinfo .fish-greycolor-icon{
+    font-size: .6em;
+}
+.fish-home-monthranking-detail .col-xs-4{
+    height: 75px;
+}
+/*当前用户排名结束*/
+.fish-home-rankings{
+    margin-top: 5px;
+}
+.fish-ranking-numcolor1 p, .fish-ranking-numcolor2 p, .fish-ranking-numcolor3 p{
+    width: 30px;
+    height:30px;
+    border-radius: 15px;
+    border: 2px solid;
+    font-size: 1.2em;
+    margin: 0 auto;
+}
+.fish-ranking-numcolor1{
+    padding: 22px 0;
+    color:  #ffd966;
+    border-color: #ffd966;
+}
+.fish-ranking-numcolor2{
+    padding: 22px 0;
+    color:  #81c6fa;
+    border-color: #81c6fa;
+}
+
+.fish-ranking-numcolor3{
+    padding: 22px 0;
+    color:  #ffa8a8;
+    border-color: #ffa8a8;
+}
+.fish-ranking-numcolornormal p{
+    width: 30px;
+    height:30px;
+    font-size: 1.2em;
+    margin: 0 auto;
+}
+.fish-ranking-numcolornormal{
+    padding: 22px 0;
+    color: #999999;
+}
+/*联络员首页底部月榜样式结束*/
+.fish-home-newsranking-details .col-xs-5 h3, .fish-home-memberranking-details .col-xs-5 h3, .fish-home-bussinessmemberranking-details .col-xs-5 h3{
+    margin-top: 30px;
+}
+/*联络员首页底部资讯榜&会员榜&商户榜样式结束*/
+.fish-readycontacter-homepage{
+    border: none;
+}
+.fish-readycontacter-homepage img{
+    height: 40px;
+    margin-left:10px;
+}
+.fish-readycontacter-homepage dd{
+    color: #00c4cc;
+    margin-top:  5px;
+    margin-left:10px;
+}
+/*预备联络员样式结束*/
+.fish-bottom-empty{
+    height: 100px;
+    background-color: #ffffff;
+}
+/*页面底部留白样式结束*/
+.fish-home-contributions-date{
+    padding-left: 0;
+    border: none;
+    margin-top: 55px;
+}
+.fish-home-contributions-sum{
+    height: 85px;
+    background-color: white;
+    margin: 5px;
+    padding: 10px;
+    line-height: 35px;
+}
+.fish-home-contributions-sum h4{
+    display: inline;
+    font-size: 1em;
+    font-weight: 600;
+    border-left: 3px solid #000000;
+    padding: 0 5px;
+}
+.fish-home-contributions-sum a{
+    color: #00c4cc;
+}
+.fish-home-contributions-sum span, .fish-home-contributions-sum .list-inline strong{
+    font-size: .5em;
+}
+
+.fish-home-contributions-title{
+    border-bottom: 1px solid #F5F5F5;
+}
+.fish-home-contributions-num strong{
+    margin-right: 5px;
+}
+.fish-home-contributions-sum .list-inline {
+    padding: 0 10px
+}
+.fish-home-contributions-details{
+    height: 345px;
+    background-color: #ffffff;
+}
+.fish-home-contributions-details ul{
+    height: 50px;
+    border-bottom: 1px solid #F5F5F5;
+    line-height: 50px;
+}
+.fish-home-contributions-text .fish-greycolor-icon{
+    font-weight: 500;
+}
+/*联络员贡献页样式结束*/
+.fish-home-contributions-sum .fish-home-contributions-details{
+    /*margin-top: 5px;*/
+    margin-left: 10px;
+
+}
+.fish-contribution-details{
+    height: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+/*联络员贡献详细页样式结束*/
+.fish-contacter-notice li, .fish-contacter-notice li ul{
+    height: 75px;
+}
+.fish-contacter-notice>li{
+    width: 100%;
+    background-color: #ffffff;
+}
+.fish-contacter-notice ul{
+    padding: 10px;
+    background-color: #ffffff;
+    border-bottom: 1px solid  #F5F5F5;
+}
+.fish-contacter-notice img{
+    height: 50px;
+}
+.fish-contacter-notice h2{
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 5px
+}
+.fish-contacter-notice .col-xs-10 {
+    padding-left: 0;
+}
+/*消息页样式结束*/
+.fish-contacter-notice-detail{
+    height: 75px;
+    margin: 5px 5px 0 5px;
+}
+.fish-notice-details{
+    padding: 10px 0;
+    margin: 0 5px;
+    background-color: #ffffff;
+}
+.fish-notice-details p{
+    text-indent: 1.8em;
+    line-height: 1;
+}
+/*通知正文样式结束*/
+.fish-contacter-resource-list{
+    height: 135px;
+    background-color: #ffffff;
+}
+.fish-contacter-resource-list li{
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid  #F5F5F5;
+    line-height: 45px;
+    padding-left: 10px;
+}
+.fish-contacter-resource-list h3{
+    margin: 0;
+    display: inline-block;
+    font-size: 1em;
+    width: 77%;
+    font-weight: 600;
+}
+/*基本资料页面样式结束*/
+.fish-resource-downloadicon {
+    margin-left: 3%;
+    padding: 0 3px 0 10px;
+    border-left: 1px solid #F5F5F5;
+}
+/*可下载资料列表页样式结束*/
+.fish-contacter-resource-detail-title{
+    display: inline-block;
+    width: 100%;
+    height: 50px!important;
+    padding: 0!important;
+    margin: 0!important;
+    line-height: 50px!important;
+}
+.fish-contacter-resource-detail-title>li{
+    height: 50px!important;
+    line-height: 50px;
+}
+.fish-contacter-resource-detail-title h2{
+    margin: 15px 0;
+}
+.fish-notice-details-text{
+    padding-top: 0;
+}
+.fish-notice-details-text p{
+    margin-top:20px;
 }

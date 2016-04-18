@@ -49,4 +49,25 @@ router.get("/contacterAgreement",function(req,res,next){
 router.get("/contacterHomepage",function(req,res,next){
     res.render("contacterHomepage");
 });
+router.get("/readycontacterHomepage",function(req,res,next){
+    res.render("readycontacterHomepage");
+});
+router.get("/contacterhomeContributions",function(req,res,next){
+    res.render("contacterhomeContributions");
+});
+router.get("/contacterContributionsDetails",function(req,res,next){
+    res.render("contacterContributionsDetails");
+});
+router.get("/contacterNotice",function(req,res,next){
+    res.render("contacterNotice");
+});
+router.get("/contacterNoticeDetail",function(req,res,next){
+    res.render("contacterNoticeDetail");
+});
+router.get("/contacterResourceLibrary",function(req,res,next){
+    res.render("contacterResourceLibrary");
+});
+router.get("/contacterResourceDetail",function(req,res,next){
+    res.render("contacterResourceDetail");
+});
 module.exports = router;
